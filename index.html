@@ -256,12 +256,19 @@ a:focus-visible{outline:3px solid #b8ffe0;outline-offset:4px}
 .section-heading::before{
   content:"";
   flex:0 0 5px;
-  width:5px;height:28px;
+  width:5px;
+  height:28px;
   border-radius:10px;
   background:#fff;
   box-shadow:0 0 16px rgba(255,255,255,.32);
-  margin-left:3px;
 }
+
+@media(max-width:720px){
+  .section-heading::before{
+    margin-left:8px !important;
+  }
+}
+
 
 .section-heading h2{margin:0;font-size:21px;font-weight:900}
 
